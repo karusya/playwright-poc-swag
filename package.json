@@ -1,0 +1,30 @@
+{
+  "name": "playwright-poc-swag",
+  "version": "1.0.0",
+  "description": "Test repo with Playwright and TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "playwright test --config=playwright.config.ts --project=Chromium",
+    "test:firefox": "playwright test --config=playwright.config.ts --project=Firefox",
+    "test:webkit": "playwright test --config=playwright.config.ts --project=Webkit",
+    "test:e2e": "playwright test --config=e2e.config.ts --reporter=html",
+    "test:e2e:cart": "playwright test --config=e2e.config.ts --grep @cart",
+    "test:e2e:sort": "playwright test --config=e2e.config.ts --grep @sort",
+    "format": "prettier --write .",
+    "lint": "eslint '**/*.{js,ts}'",
+    "lint:fix": "eslint --fix '**/*.{js,ts}'"
+  },
+  "author": "Karina Zhdanova",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "@typescript-eslint/eslint-plugin": "^5.30.4",
+    "@typescript-eslint/parser": "^5.30.4",
+    "eslint": "^8.19.0",
+    "playwright-expect": "^0.1.2",
+    "prettier": "^2.7.1"
+  }
+}

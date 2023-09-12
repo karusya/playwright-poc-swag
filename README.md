@@ -13,7 +13,7 @@ Test core repo created to demonstrate the usage of Playwright in action along wi
 
 # Running the tests
 
-There are E2E tests for :link: [SAUCE](https://www.saucedemo.com/)(!in ukraine I couldn't open bbc.uk - it redirect to .com site), separated by a feature. The following node scripts are defined for running the tests:
+There are E2E tests for :link: [SAUCE](https://www.saucedemo.com/) separated by a feature. The following node scripts are defined for running the tests:
 
 `test:e2e` to run all E2E suites for all browsers,
 
